@@ -1,0 +1,19 @@
+- Signals must have  a type declaration, types are defined in libraries, ususlaly IEEE or WORK (work is default so never needs to be written). 
+
+- Binary example: B"11001010";    or alternatively using base: 2#11001010#;
+- Hex example: X"F6";       or alternatively using base:   16#F6#;
+NB using underscores within the value itself can improve readability and is allowed :)
+
+- Integer example: constant FREEZE : integer := 32; 
+
+
+-IMPORTANT LIBRARIES:  library IEEE; and sub libraries std_logic_1164 and numeric_std    
+- example of how to start VHDL code file: 
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all; 
+
+Use unsigned or signed data types rather than std_logic_vector whenever possible!
+
+
+
